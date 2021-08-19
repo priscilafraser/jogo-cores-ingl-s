@@ -1,0 +1,93 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: red;
+}
+
+header#cabecalho-principal {
+    background-color: #dddddd;
+    width: 100%;
+    height: 40px;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pontuacao-game {
+    background-color: #61B1EA;
+    border-radius: 30px;   /*borda arredondada*/
+    padding: 10px;
+    color: white;
+    padding: 5px 50px;  /*primeiro cimabaixo segundo esq e direita*/
+    
+    font-size: 20px;
+    font-weight: 700;
+
+    margin-left: 15px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#pontuacao-game img {
+    margin-right: 5px;
+}
+
+#nome-jogo {
+    font-weight: bolder;
+    font-size: 27px;
+    margin-right: 20px;
+}
+
+section#corpo div#esquerda {
+
+    margin-top: 15px;
+    margin-left: 10px;
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+
+    align-items: center;
+
+    border: 3px solid black;
+
+
+}
+
+section#corpo div#esquerda div#cor-atual{
+    margin-top: 10px;
+
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    border-radius: 10px;
+
+    
+}
+
+section#corpo div#esquerda button#btn-responder {
+
+    margin-top: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+
+
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    padding: 5px 45px;
+
+
+
+}
