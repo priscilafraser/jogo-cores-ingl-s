@@ -6,6 +6,10 @@ var engine = {
     "moedas": 0 
 }
 
+const audioMoeda = new Audio('audio/moeda.mp3');
+const audioErrou = new Audio('audio/errou.mp3');
+
+
 //funções
 function sortearCor() {
     var indexcorSorteada = Math.floor(Math.random()*engine.cores.length);
@@ -23,4 +27,19 @@ function aplicarCorNaCaixa(nomeDaCor) {
     caixaDasCores.style.backgroundColor = nomeDaCor;
     caixaDasCores.style.backgroundImage = "url('/img/caixa-fechada.png')";
     caixaDasCores.style.backgroundSize = "100%";
+}
+
+
+function atualizaPontuacao (valor) {
+    var pontuacao = document.getElementById("pontuacao-atual");
+
+    engine.moedas += valor;
+
+    if (valor < 0) {
+        audioErrou.play();
+    } else {
+        audioMoeda.play();
+    }
+
+    pontuacao.innerText = engine.moedas;
 }
